@@ -1,4 +1,4 @@
-package com.github.marschall.techzone.java11;
+package com.github.marschall.techzone.java11.lvti;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;

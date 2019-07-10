@@ -1,4 +1,4 @@
-package com.github.marschall.techzone.java11;
+package com.github.marschall.techzone.java11.lvti.stubs;
 
 import java.util.List;
 

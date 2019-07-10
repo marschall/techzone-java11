@@ -1,6 +1,9 @@
-package com.github.marschall.techzone.java11;
+package com.github.marschall.techzone.java11.lvti;
 
 import java.util.List;
+
+import com.github.marschall.techzone.java11.lvti.stubs.Customer;
+import com.github.marschall.techzone.java11.lvti.stubs.DbConnection;
 
 public class Guideline1 {
   

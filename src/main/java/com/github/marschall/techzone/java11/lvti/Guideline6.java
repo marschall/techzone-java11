@@ -1,9 +1,11 @@
-package com.github.marschall.techzone.java11;
+package com.github.marschall.techzone.java11.lvti;
 
 import java.math.BigInteger;
 import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
+
+import com.github.marschall.techzone.java11.lvti.stubs.Item;
 
 public class Guideline6 {
 

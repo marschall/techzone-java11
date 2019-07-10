@@ -1,6 +1,8 @@
-package com.github.marschall.techzone.java11;
+package com.github.marschall.techzone.java11.lvti;
 
 import java.util.ArrayList;
+
+import com.github.marschall.techzone.java11.lvti.stubs.Item;
 
 public class Guideline2 {
 
