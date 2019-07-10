@@ -3,6 +3,7 @@ package com.github.marschall.techzone.java11;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.containsInAnyOrder;
+import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.hasEntry;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -26,7 +27,28 @@ class CollectionsTests {
   @Test
   void listOf() {
     assertThat(List.of(1, 2, 3), contains(1, 2, 3));
+  }
+
+  @Test
+  void listOfOne() {
+    assertThat(List.of(1), contains(1));
     assertThrows(UnsupportedOperationException.class, () -> List.of(1).add(2));
+  }
+  
+  @Test
+  void listOfEmpty() {
+    assertThat(List.of(), empty());
+  }
+
+  @Test
+  void listOfArray() {
+    Integer[] array = {1, 2, 3};
+    assertThat(List.of(array), contains(1, 2, 3));
+  }
+
+  @Test
+  void listOfNull() {
+    assertThrows(NullPointerException.class, () -> List.of(1, null));
   }
 
   @Test
