@@ -20,12 +20,21 @@ public class Guideline4 {
         .map(Map.Entry::getKey);
   }
 
-  public Optional<String> findMostFrequentGood(List<String> strings) {
+  public Optional<String> findMostFrequentBrokenUp(List<String> strings) {
     Map<String, Long> frequencyMap = strings.stream()
-                                       .collect(groupingBy(s -> s, counting()));
+                                            .collect(groupingBy(s -> s, counting()));
     Optional<Map.Entry<String, Long>> maxEntryOptional = frequencyMap.entrySet()
-        .stream()
-        .max(Map.Entry.comparingByValue());
+                                                                     .stream()
+                                                                     .max(Map.Entry.comparingByValue());
+    return maxEntryOptional.map(Map.Entry::getKey);
+  }
+  
+  public Optional<String> findMostFrequentGood(List<String> strings) {
+    var frequencyMap = strings.stream()
+                              .collect(groupingBy(s -> s, counting()));
+    var maxEntryOptional = frequencyMap.entrySet()
+                                       .stream()
+                                       .max(Map.Entry.comparingByValue());
     return maxEntryOptional.map(Map.Entry::getKey);
   }
 

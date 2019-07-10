@@ -18,7 +18,7 @@ public class Guideline2 {
 
   public void bad() {
     var items = new ArrayList<Item>();
-    // var items = new HashSet<Item>();
+//    var items = new HashSet<Item>();
 
     // a lot of code
 

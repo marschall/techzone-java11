@@ -1,4 +1,4 @@
-package com.github.marschall.techzone.java11;
+package com.github.marschall.techzone.java11.lvti;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -34,8 +34,8 @@ public class LvtiExamples {
 
   String readOriginal(Socket socket, String charsetName) throws IOException {
     try (InputStream is = socket.getInputStream();
-        InputStreamReader isr = new InputStreamReader(is, charsetName);
-        BufferedReader buf = new BufferedReader(isr)) {
+         InputStreamReader isr = new InputStreamReader(is, charsetName);
+         BufferedReader buf = new BufferedReader(isr)) {
       return buf.readLine();
     }
   }
